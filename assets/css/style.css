@@ -7,7 +7,7 @@
   font-family: 'Roboto', sans-serif;
   font-family: 'Source Sans Pro', sans-serif;
 }
-/* common design pattern */
+/* ================== common design pattern ================*/
 button{
     padding: 6px 30px;
     font-size: var(--extra-small);
@@ -20,6 +20,17 @@ button{
     border: 2px solid var(--primary-color);
     
 }
+.btn-2{
+    background: none;
+    border: 2px solid var(--secondary-color);
+    color:var(--secondary-color)
+}
+
+.btn-2:hover{
+    background: var(--secondary-color);
+    color: var(--primary-text-color);
+}
+/* ------------- header -----------*/
 header{
     background: linear-gradient(135deg,rgb(0,0,0,1),rgb(0,0,0,.2)),
    url(../img/cover.jpg);
@@ -28,6 +39,7 @@ header{
     width: 100%;
     min-height: 450px;
 }
+/* navbar */
 header nav{
     display: flex;
     justify-content: space-between;
@@ -121,7 +133,7 @@ header .banner>.banner-button button:nth-child(2):hover{
     background:var(--primary-color);
 }
 
-/* banner card */
+/*------------ banner card -------------*/
 
 .card{
     background-color: var(--secondary-color);
@@ -131,19 +143,74 @@ header .banner>.banner-button button:nth-child(2):hover{
     padding:0px 30px;
     transition: .3s;
     margin-top: 20px;
+  
 }
-.card img,h4,p{
+.card img,h4{
     margin-top:35px;
 }
 .card > p{
+    margin-top: 35px;
     padding-bottom: 45px;
+}
+.card > h4{
+    position: relative;
 }
 
 .card:hover{
     background-color: var(--primary-color);
 }
 
+.card > h4::before{
+      content:"";
+      position: absolute;
+      height: 2px;
+      width: 40px;
+      background-color: var(--primary-text-color);
+      top:35px;
+      left:0;
+}
 
+/* ----------- details ----------- */
+  .details{
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 100px;
+  }
+
+  .details .details-text h2,p,button{
+      margin-bottom: 25px;
+  }
+  .details .detalis-img{
+      display: flex;
+      justify-content: space-between;
+  }
+  .details .detalis-img .img-box{
+      position: relative;
+      width: 48%;
+      min-height: 200px;
+  }
+  .details .detalis-img .img-box img{
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+} 
+  .details .detalis-img .img-box::before{
+      content:"";
+      position: absolute;
+      top:0;
+      left: 0;
+      background: var(--secondary-color);
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: .6s;
+  }
+
+  .details .detalis-img .img-box:hover:before{
+    opacity: 0.3;
+  }
+ 
+  
 /*==================  device ===================*/
 @media only screen and (min-width:480px){
  
@@ -167,6 +234,37 @@ header .banner>.banner-button button:nth-child(2):hover{
     width:32%; 
 
 }
+/* ------------- details ------------- */
+ .details{
+      width: 100%;
+      padding: 50px 0px 50px 0px;
+      background-color: var(--secondary-color);
+      color:var(--primary-text-color);
+  }
+
+  .details .details-text{
+      padding: 20px 20px 0px 50px;
+  }
+  .details .detalis-img{
+      justify-content: space-evenly;
+      margin-top: 20px;
+  }
+  .details .detalis-img .img-box{
+    width: 40%;
+    max-height: 300px;
+}
+
+.btn-2.details-btn{
+    border: 2px solid var(--primary-text-color);
+    color:var(--primary-text-color)
+}
+
+.btn-2.details-btn:hover{
+    background: var(--primary-text-color);
+    color: var(--secondary-color);
+}
+
+
 }
 /* =================== laptop ================== */
 @media only screen and (min-width:991px){
@@ -236,89 +334,29 @@ header .banner>.banner-button{
     padding:0px 30px;
 }
 
-
-
-
-
-
-
-
-/*
-header nav .menu>ul li a{
-    text-decoration: none;
-    color:var(--primary-text-color);
-    font-size:var(--extra-small);
-    padding-bottom: 2px;
-    transition: .2s;
-}
-header nav .menu>ul li a:active{
-    color:var(--primary-color)
-}
-header nav .menu>ul li a:hover{
-    border-bottom: 2px solid var(--primary-color);
-} */
-
-/* banner */
-/* header .banner{
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 90px; 
-    text-align: center;   
-} */
-
-/* header .banner .banner-text h2{
-    font-size: var(--large);
-    color:var(--primary-text-color)
-}
-
-header .banner .banner-text p{
-    font-size: var(--small);
-    color:var(--light-text-color);
-    padding-top: 40px;
-    width: 60%;
-    margin: 0 auto;
-}
-header .banner>.banner-button{
-    margin: 40px;
-}
-header .banner>.banner-button button:nth-child(1){
-    margin-right: 8px;
-    background:var(--primary-color);
-    padding: 8px 32px;
-}
-header .banner>.banner-button button:nth-child(2):hover{
-    background:var(--primary-color);
-} */
-
-/* banner card */
-
-/* .banner-card{
+/*------------ details ----------- */
+.details{
     display: flex;
-    justify-content: space-between;
-    margin:-60px 200px 0px 200px;
+    justify-content: center;
+    padding: 60px 0px 60px 0px;
 }
 
-.card{
-    background-color: var(--secondary-color);
-    color:var(--primary-text-color);
-    width:30%;
-    padding:0px 30px;
-    transition: .3s;
+.details .details-text{
+    width: 40%;
 }
-.card img,h4,p{
-    margin-top:35px;
+.details .details-text h2{
+    font-size: var(--large-md-device);
 }
-.card > p{
-    padding-bottom: 35px;
+.details .details-text p{
+    font-size: var(--small-sm-device);
 }
-
-.card:hover{
-    background-color: var(--primary-color);
-} */
+.details .details-img{
+    width: 30%;
+}
     
 }
 
-/* =================== large ================ */
+/* =================== large device ================ */
 @media only screen and (min-width:1200px){
     /* banner card */
 
