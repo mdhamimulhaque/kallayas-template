@@ -146,7 +146,7 @@ header .banner>.banner-button button:nth-child(2):hover{
   
 }
 .card img,h4{
-    margin-top:35px;
+    margin-top:25px;
 }
 .card > p{
     margin-top: 35px;
@@ -210,7 +210,33 @@ header .banner>.banner-button button:nth-child(2):hover{
     opacity: 0.3;
   }
  
-  
+  /* -------- services ----------- */
+  .services{
+    margin-top: 50px;
+    padding: 20px 0px 20px 0px;
+    background-color: var(--light-bg-color);
+} 
+
+.services .services-left,.services-right{
+    width: 90%;
+    margin: 0 auto;
+}
+ .services h4{
+    color: var(--secondary-color);
+    font-size: var(--medium);
+    margin-bottom: 8px;
+}
+ .services p{
+    color: var(--light-text-color);
+    font-size: var(--extra-small);
+ 
+}
+.services .services-right h2{
+    color: var(--secondary-color);
+    font-size: var(--large-md-device);
+    margin-bottom: 20px;
+}
+
 /*==================  device ===================*/
 @media only screen and (min-width:480px){
  
@@ -262,8 +288,19 @@ header .banner>.banner-button button:nth-child(2):hover{
 .btn-2.details-btn:hover{
     background: var(--primary-text-color);
     color: var(--secondary-color);
+    
 }
 
+/* services */
+
+.services .services-left{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.services .services-left .services-box{
+    width: 40%;
+}
 
 }
 /* =================== laptop ================== */
@@ -353,6 +390,24 @@ header .banner>.banner-button{
 .details .details-img{
     width: 30%;
 }
+
+/* ------- services--------- */
+.services{
+    display: flex;
+    justify-content: center;
+}
+
+.services .services-right h2{
+    margin-top:25px;
+    padding-right: 20px;
+}
+.services .services-right p{
+    padding-right: 60px;
+}
+
+/* .services .services-left .services-box p{
+    width: 40%;
+} */
     
 }
 
