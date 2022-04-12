@@ -172,7 +172,7 @@ header .banner>.banner-button button:nth-child(2):hover{
 
 /* ----------- details ----------- */
   .details{
-      width: 90%;
+      width: 100%;
       margin: 0 auto;
       margin-top: 100px;
   }
@@ -373,6 +373,7 @@ header .banner>.banner-button{
 
 /*------------ details ----------- */
 .details{
+    width: 90%;
     display: flex;
     justify-content: center;
     padding: 60px 0px 60px 0px;
@@ -395,6 +396,9 @@ header .banner>.banner-button{
 .services{
     display: flex;
     justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 .services .services-right h2{
