@@ -237,6 +237,60 @@ header .banner>.banner-button button:nth-child(2):hover{
     margin-bottom: 20px;
 }
 
+
+
+/* ------------- product filter --------------- */
+.product-filter{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.product-filter .product-menu ul{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.product-filter .product-menu ul li{
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-left:0px;
+    padding: 2px 3px;
+    font-size: var(--extra-small);
+    color:var(--secondary-color);
+    transition: .5s; 
+    text-transform: uppercase;
+}
+
+.product-filter .product-menu ul li:hover{
+    color:var(--primary-color);
+}
+
+/* product items */
+.product-filter .product-items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.product-filter .product-items .product{
+    width: 48%;
+    height: 150px;
+    margin:0px 1% 5px 1%;
+}
+.product-filter .product-items .product{
+
+}
+.product-filter .product-items .product img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
 /*==================  device ===================*/
 @media only screen and (min-width:480px){
  
@@ -303,6 +357,12 @@ header .banner>.banner-button button:nth-child(2):hover{
 }
 
 }
+/* ------------- product filter ------------ */
+.product-filter .product-menu{  
+    width: 70%;
+    margin: 0 auto;
+}
+
 /* =================== laptop ================== */
 @media only screen and (min-width:991px){
 
@@ -409,10 +469,23 @@ header .banner>.banner-button{
     padding-right: 60px;
 }
 
-/* .services .services-left .services-box p{
-    width: 40%;
-} */
-    
+/* -------- products filter -------------*/
+
+.product-filter{
+    margin-top: 80px;
+}
+.product-filter .product-menu{  
+    width: 60%;
+}
+.product-filter .product-menu ul li{
+    padding: 2px 10px;
+}
+.product-filter .product-items .product{
+    width: 24%;
+    min-height: 230px;
+    margin:0px .5% 10px .5%;
+}
+
 }
 
 /* =================== large device ================ */
@@ -422,125 +495,11 @@ header .banner>.banner-button{
 .banner-card{
     margin:-100px 150px 0px 150px;
 }
-
+.product-filter{
+    margin-top: 100px;
+}
+.product-filter .product-menu{  
+    width: 50%;
+}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ====================== header ================= */
-/* header{
-    background: linear-gradient(135deg,rgb(0,0,0,1),rgb(0,0,0,.2)),
-   url(../img/cover.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    min-height: 550px;
-} */
-/* navbar */
-/* header nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:0px 200px;
-    padding-top: 30px;
-    cursor: pointer;
-}
-
-header nav .menu>ul li{
-    list-style: none;
-    display: inline; 
-    margin-right:50px; 
-}
-header nav .menu>ul li a{
-    text-decoration: none;
-    color:var(--primary-text-color);
-    font-size:var(--extra-small);
-    padding-bottom: 2px;
-    transition: .2s;
-}
-header nav .menu>ul li a:active{
-    color:var(--primary-color)
-}
-header nav .menu>ul li a:hover{
-    border-bottom: 2px solid var(--primary-color);
-} */
-
-/* banner */
-/* header .banner{
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 90px; 
-    text-align: center;   
-} */
-
-/* header .banner .banner-text h2{
-    font-size: var(--large);
-    color:var(--primary-text-color)
-}
-
-header .banner .banner-text p{
-    font-size: var(--small);
-    color:var(--light-text-color);
-    padding-top: 40px;
-    width: 60%;
-    margin: 0 auto;
-}
-header .banner>.banner-button{
-    margin: 40px;
-}
-header .banner>.banner-button button:nth-child(1){
-    margin-right: 8px;
-    background:var(--primary-color);
-    padding: 8px 32px;
-}
-header .banner>.banner-button button:nth-child(2):hover{
-    background:var(--primary-color);
-} */
-
-/* banner card */
-
-/* .banner-card{
-    display: flex;
-    justify-content: space-between;
-    margin:-60px 200px 0px 200px;
-}
-
-.card{
-    background-color: var(--secondary-color);
-    color:var(--primary-text-color);
-    width:30%;
-    padding:0px 30px;
-    transition: .3s;
-}
-.card img,h4,p{
-    margin-top:35px;
-}
-.card > p{
-    padding-bottom: 35px;
-}
-
-.card:hover{
-    background-color: var(--primary-color);
-} */
