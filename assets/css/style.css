@@ -436,7 +436,7 @@ header .banner>.banner-button button:nth-child(2):hover{
 }
 .handcrafted .handcrafted-text{
     background-color:var(--light-bg-color);
-    padding-left:50px;
+    padding-left:40px;
     width: 50%;
 }
 .handcrafted .handcrafted-text p{
@@ -619,6 +619,7 @@ header .banner>.banner-button{
     width: 80%;
 }
 
+
 }
 
 /* =================== large device ================ */
@@ -649,7 +650,7 @@ header .banner>.banner-button{
 
 .handcrafted .handcrafted-text{
     width: 40%;
-    margin-left: 2.5%;
+    padding-left:55px;
 }
 
 .handcrafted-img{
