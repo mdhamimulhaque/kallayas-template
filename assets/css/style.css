@@ -341,8 +341,55 @@ header .banner>.banner-button button:nth-child(2):hover{
     width: 100%;
 }
 
+/* -------- contact -------- */
+
+.contact{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.contact .contact-text h2,p,button{
+    margin-bottom: 25px;
+}
+.contact .contact-form{
+    margin-top: 50px;
+}
 
 
+input,textarea:focus{
+    outline: none;
+}
+
+#name,#service{
+    width: 100%;
+    height: 35px;
+}
+#company,#email{
+    width: 48%;
+    height: 35px;
+}
+.input-box{
+    display: flex;
+    justify-content: space-between;
+}
+textarea {
+    width: 100%;
+    height: 200px;
+}
+
+input,textarea{
+    border: 1.5px solid var(--secondary-color);
+    background: transparent;
+    margin-bottom: 20px;
+}
+input,textarea::placeholder{
+    padding:5px 10px;
+}
+
+#btn-submit{
+   background:#fb414e;
+    width: 100%;
+}
 
 
 
@@ -429,7 +476,7 @@ header .banner>.banner-button button:nth-child(2):hover{
 .clients .clients-video .video-box iframe{
     height:300px
 }
-
+/* --------- handcrafted ----------- */
 .handcrafted{
     display: flex;
     margin-top: 50px;
@@ -445,8 +492,6 @@ header .banner>.banner-button button:nth-child(2):hover{
 .handcrafted .handcrafted-text h2{
    font-size:var(--large-md-device);
 }
-
-
 .handcrafted-text .handcrafted-icon-box{
     display: flex;
     justify-content: space-between;
@@ -459,14 +504,12 @@ header .banner>.banner-button button:nth-child(2):hover{
     width:50px;
     height: 50px;
 }
-
 .handcrafted-img{
  width: 50%;
  display: flex;
  align-items: flex-end;
 }
 .handcrafted-img-box{
-
 }
 .handcrafted-img-box img {
    height: 100%;
@@ -619,6 +662,19 @@ header .banner>.banner-button{
     width: 80%;
 }
 
+/* ----------- contact ----------- */
+.contact{
+    width: 60%;
+}
+.contact .form-box{
+    display: flex;
+}
+.contact-text,.contact-form{
+    width: 50%;
+}
+.contact-text{
+    padding:40px 10px 0px 0px;
+}
 
 }
 
@@ -639,6 +695,7 @@ header .banner>.banner-button{
     padding: 2px 15px;
     font-size: var(--small);
 }
+/* ------ clients ---------- */
 .clients {
     margin-bottom: 50px;
 }
@@ -647,7 +704,7 @@ header .banner>.banner-button{
     height:300px;
     width: 80%;
 }
-
+/* --------- handcrafted -------- */
 .handcrafted .handcrafted-text{
     width: 40%;
     padding-left:55px;
