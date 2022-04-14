@@ -311,6 +311,40 @@ header .banner>.banner-button button:nth-child(2):hover{
     height:200px
 }
 
+/* ------------ handcrafted --------- */
+.handcrafted{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color:var(--light-bg-color);
+}
+
+.handcrafted .handcrafted-text {
+    padding-left: 20px;
+    padding-top: 50px;
+}
+.handcrafted .handcrafted-text h2,p,button{
+    margin-bottom: 25px;
+}
+
+.handcrafted-icon-box{
+    margin-top: 20px;
+    padding-right: 20px;
+}
+.handcrafted-img-box{
+    height:350px;
+    width: 100%;
+    padding: 0px 20px;
+}
+.handcrafted-img-box img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
 
 /*==================  device ===================*/
 @media only screen and (min-width:480px){
@@ -377,7 +411,7 @@ header .banner>.banner-button button:nth-child(2):hover{
     width: 40%;
 }
 
-}
+
 /* ------------- product filter ------------ */
 .product-filter .product-menu{  
     width: 70%;
@@ -396,6 +430,50 @@ header .banner>.banner-button button:nth-child(2):hover{
     height:300px
 }
 
+.handcrafted{
+    display: flex;
+    margin-top: 50px;
+}
+.handcrafted .handcrafted-text{
+    background-color:var(--light-bg-color);
+    padding-left:50px;
+    width: 50%;
+}
+.handcrafted .handcrafted-text p{
+   font-size:var(--extra-small) ;
+}
+.handcrafted .handcrafted-text h2{
+   font-size:var(--large-md-device);
+}
+
+
+.handcrafted-text .handcrafted-icon-box{
+    display: flex;
+    justify-content: space-between;
+}
+.handcrafted-text .handcrafted-icon-box .handcrafted-box{
+    width: 50%;
+    padding-right: 12px;
+}
+.handcrafted-text .handcrafted-icon-box .handcrafted-box img{
+    width:50px;
+    height: 50px;
+}
+
+.handcrafted-img{
+ width: 50%;
+ display: flex;
+ align-items: flex-end;
+}
+.handcrafted-img-box{
+
+}
+.handcrafted-img-box img {
+   height: 100%;
+   width: 100%;
+}
+
+}
 /* =================== laptop ================== */
 @media only screen and (min-width:991px){
 
@@ -540,6 +618,7 @@ header .banner>.banner-button{
     height:250px;
     width: 80%;
 }
+
 }
 
 /* =================== large device ================ */
@@ -559,10 +638,26 @@ header .banner>.banner-button{
     padding: 2px 15px;
     font-size: var(--small);
 }
+.clients {
+    margin-bottom: 50px;
+}
 
 .clients .clients-video .video-box iframe{
     height:300px;
     width: 80%;
+}
+
+.handcrafted .handcrafted-text{
+    width: 40%;
+    margin-left: 2.5%;
+}
+
+.handcrafted-img{
+    width: 60%;
+   }
+
+   .handcrafted-img-box{
+    min-height:550px;
 }
 
 }
