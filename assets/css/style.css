@@ -47,7 +47,7 @@ header{
     min-height: 450px;
 }
 /* navbar */
-header nav{
+ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,20 +60,20 @@ header nav .menu{
 }
 
 
-header nav .menu>ul li{
+ nav .menu>ul li{
     list-style: none;
 }
-header nav .menu>ul li a{
+nav .menu>ul li a{
     text-decoration: none;
     color:var(--primary-text-color);
     font-size:var(--small);
     padding-bottom: 2px;
     transition: .2s;
 }
-header nav .menu>ul li a:active{
+ nav .menu>ul li a:active{
     color:var(--primary-color)
 }
-header nav .menu>ul li a:hover{
+ nav .menu>ul li a:hover{
     border-bottom: 2px solid var(--primary-color);
 }
 
@@ -232,7 +232,7 @@ header .banner>.banner-button button:nth-child(2):hover{
 }
  .services h4{
     color: var(--secondary-color);
-    font-size: var(--medium);
+    font-size: var(--small);
     margin-bottom: 8px;
 }
  .services p{
@@ -242,7 +242,6 @@ header .banner>.banner-button button:nth-child(2):hover{
 }
 .services .services-right h2{
     color: var(--secondary-color);
-    font-size: var(--large-md-device);
     margin-bottom: 20px;
 }
 
@@ -363,10 +362,12 @@ input,textarea:focus{
 #name,#service{
     width: 100%;
     height: 35px;
+    font-size: var(--extra-small);
 }
 #company,#email{
     width: 48%;
     height: 35px;
+    font-size: var(--extra-small);
 }
 .input-box{
     display: flex;
@@ -375,11 +376,12 @@ input,textarea:focus{
 textarea {
     width: 100%;
     height: 200px;
+    font-size: var(--extra-small);
 }
 
 input,textarea{
     border: 1.5px solid var(--secondary-color);
-    background: transparent;
+    /* background: transparent; */
     margin-bottom: 20px;
 }
 input,textarea::placeholder{
@@ -390,7 +392,66 @@ input,textarea::placeholder{
    background:#fb414e;
     width: 100%;
 }
-
+/* ---------- footer ------------- */
+footer{
+    background-color: var(--secondary-color);
+    padding: 40px 0px 10px 0px;
+    color:var(--primary-text-color);
+    margin-top: 50px;
+    
+}
+footer .footer-first{
+    width: 98%;
+    margin: 0 auto;
+}
+footer .footer-middle,.footer-last{
+    width: 90%;
+    margin: 0 auto;
+}
+footer .footer-first{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-menu .menu{
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.footer-menu .menu ul li{
+    display: inline;
+    margin-right: 3px;
+}
+.footer-menu nav .menu>ul li a{
+    font-size: var(--small-sm-device);
+}
+footer h5{
+    margin-bottom: 10px;
+}
+footer p{
+    font-size: var(--extra-small); 
+}
+.footer-middle{
+    margin-bottom: 10px;
+}
+#footer-input{
+    font-size: var(--extra-small);
+    width: 70%;
+}
+footer button{
+    background-color: #fb414e;
+    padding: 5px 16px;
+}
+.footer-last .footer-icons {
+    font-size: 25px;
+    margin: 20px 0px 20px 0px;
+}
+.footer-last .footer-icons i{
+    transition: .5s;
+}
+.footer-last .footer-icons i:hover{
+    color:#fb414e
+}
 
 
 /*==================  device ===================*/
@@ -509,13 +570,41 @@ input,textarea::placeholder{
  display: flex;
  align-items: flex-end;
 }
-.handcrafted-img-box{
-}
+
 .handcrafted-img-box img {
    height: 100%;
    width: 100%;
 }
+/* ------- contact ---------- */
+.contact .contact-text h2{
+    font-size: var(--large-md-device);
+}
+/* ---------- footer -------- */
+.footer-middle,.footer-last{
+    width: 90%;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+.footer-middle .contact-text-footer,.contact-form-footer{
+    width: 100%;
+}
+.footer-middle .contact-text-footer{
+    padding-right: 50px;
+    margin-top: 50px;
+}
 
+.footer-menu .menu ul li{
+   margin-right: 20px;
+}
+
+.footer-last .footer-icons i{
+    margin-right: 10px;
+}
+
+.footer-last > p{
+    margin-right: 20%;
+}
 }
 /* =================== laptop ================== */
 @media only screen and (min-width:991px){
@@ -674,6 +763,22 @@ header .banner>.banner-button{
 }
 .contact-text{
     padding:40px 10px 0px 0px;
+}
+/* ------------- footer ----------- */
+footer{
+    padding: 50px 0px 5px 0px;
+}
+footer .footer-first{
+    width: 90%;
+}
+
+footer .footer-first{
+    flex-direction: row;
+    /* justify-content: flex-start; */
+    align-items: center;
+}
+.footer-logo,.footer-menu{
+    width: 100%;
 }
 
 }
